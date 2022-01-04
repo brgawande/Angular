@@ -1,0 +1,18 @@
+<form id="img" [formGroup]="loginForm" (ngSubmit)="logIn()">
+  <img src="../../assets/image/bg.jpg" alt="">
+  <div class="login-box">
+    <h1>Login</h1>
+    <div class="textbox">
+      <input formControlName="email" type="email" placeholder="username" />
+    </div>
+    <div class="textbox">
+      <input
+        formControlName="password"
+        type="password"
+        placeholder="password"
+      />
+    </div>
+    <button class="btn">Login</button>
+    <a routerLink="/signup">New User Click to SignUp</a>
+  </div>
+</form>
